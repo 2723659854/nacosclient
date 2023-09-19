@@ -78,7 +78,6 @@ class ServiceRegister
                             /** 只要有返回值，就说明正常 ，这个可能不合理，暂时先这么弄吧 */
                             if ($check){
                                 /** 发送心跳 */
-                                var_dump("sendBeat");
                                 self::$client->sendBeat($serviceName, $ip, $port, $namespace, $ephemeral, $metadata);
                             }
 

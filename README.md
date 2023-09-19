@@ -100,6 +100,7 @@ if (!$socket) {
         while ($flag){
             $string = fgets($conn ,1024);
             if (strlen($string)==0){
+
                 fwrite($conn,  "pong\n");
                 fclose($conn);
                 $flag=false;
@@ -117,6 +118,8 @@ if (!$socket) {
     }
     fclose($socket);
 }
+
+
 ```
 开启服务端 php server.php
 
