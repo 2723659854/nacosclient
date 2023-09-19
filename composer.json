@@ -3,10 +3,10 @@
   "description": "webman的nacos服务管理",
   "type": "library",
   "license": "MIT",
-  "description": "Webman plugin xiaosongshu/nacosclient",
   "require": {
     "xiaosongshu/nacos": "^1.0"
   },
+  "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
       "Xiaosongshu\\Nacosclient\\": "src"
