@@ -79,6 +79,9 @@ class ServiceRegister
                             if ($check){
                                 /** 发送心跳 */
                                 self::$client->sendBeat($serviceName, $ip, $port, $namespace, $ephemeral, $metadata);
+                            }else{
+                                /** 更新为非健康状态 */
+                              self::$client->updateInstanceHealthy($serviceName,$namespace, $ip, $port,false);
                             }
 
                         }, false);

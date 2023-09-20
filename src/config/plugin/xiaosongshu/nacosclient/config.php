@@ -2,7 +2,7 @@
 
 return [
     /** nacos 服务地址 */
-    'host'=>'http://192.168.4.110:8848',
+    'host'=>'http://192.168.4.131:8848',
     /** 账户 */
     'username'=>'nacos',
     /** 密码 */
@@ -24,7 +24,7 @@ return [
             'instance'=>[
                 [
                     /** IP */
-                    'ip'=>'192.168.4.110',
+                    'ip'=>'192.168.4.131',
                     /** 端口 */
                     'port'=>'9000',
                     /** 权重 */
@@ -32,11 +32,11 @@ return [
                     /** 健康状态 */
                     'healthy'=>false,
                     /** 是否临时实例 */
-                    'ephemeral'=>false,
+                    'ephemeral'=>true,
                 ],
                 [
                     /** IP */
-                    'ip'=>'192.168.4.110',
+                    'ip'=>'192.168.4.131',
                     /** 端口 */
                     'port'=>'9504',
                     /** 权重 */
@@ -44,7 +44,7 @@ return [
                     /** 健康状态 */
                     'healthy'=>false,
                     /** 是否临时实例 */
-                    'ephemeral'=>false,
+                    'ephemeral'=>true,
                 ]
             ]
         ]
